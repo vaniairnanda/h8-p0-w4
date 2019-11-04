@@ -2,14 +2,16 @@ function angkaPrima(angka) {
   // you can only write your code here
   if (angka <= 1) {
       return 'Invalid number'
+  } else if (angka === 3 ) {
+      return true
   } else {
-    for (var i = 2; i < angka; i++) {
+    for (var i = 3; i < angka; i++) {
         if (angka % i === 0) {
-            return 'False'
-            break;
-        } else {
-            return 'True'
-        }
+            return false
+            break
+        } 
+            return true
+        
     }
   }
   
