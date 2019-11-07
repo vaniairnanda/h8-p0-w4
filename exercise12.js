@@ -4,8 +4,8 @@ function countProfit(shoppers) {
                        ['Sweater Uniklooh', 175000, 1]
                      ];
     var result = []       
-    if (shoppers === []) {
-        return [];
+    if (shoppers.length === 0) {
+        return result;
     } 
     for (var i = 0; i < listBarang.length; i++) {
         if (result[i] === undefined) {
